@@ -1,0 +1,270 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background: linear-gradient(to right, #74ebd5, #acb6e5);
+  color: #333;
+  height: 100vh;
+  width: 100vw;
+  padding: 20px;
+  box-sizing: border-box; /* Ensure padding doesn't add to the height/width */
+}
+
+.header {
+  font-size: 2rem;
+  color: #436cbf;
+  font-weight: bold;
+  margin-bottom: 20px; /* Add space below the header */
+}
+
+.main-container {
+  display: flex;
+  width: calc(100% - 40px); /* Account for padding */
+  height: calc(100vh - 100px); /* Leave space for header */
+  box-sizing: border-box;
+}
+
+.video-and-controls {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-right: 20px; /* Space between video and comments section */
+}
+
+.video-container {
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio */
+  position: relative;
+  background: #000; /* Fallback for video placeholder */
+  border-radius: 15px;
+  overflow: hidden; /* Ensure content respects border radius */
+}
+
+.video-container img,
+.video-placeholder {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure the video/image covers the container properly */
+}
+
+.controls-overlay {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10; /* Ensure it's above the video */
+}
+
+.clear-overlay {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  z-index: 10; /* Ensure it's above the video */
+}
+
+
+.controls {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  margin-top: 10px; /* Space between video and controls/caption */
+  transform: translateY(520px);
+}
+
+.caption-container{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: auto; /* Allows scrolling within comments section if needed */
+  max-height: 100%;
+  width: 100%;
+}
+
+.comments-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow: auto; /* Allows scrolling within comments section if needed */
+  max-height: 100%; /* Prevents overflow beyond the main container */
+}
+
+.comments-display {
+  overflow-y: auto;
+  margin-bottom: 10px;
+}
+
+.comment-box, .send {
+  width: 100%; /* Ensure these fill the comment section */
+  margin: 0; /* Reset margin for consistent alignment */
+}
+
+.send {
+  width: 100%;
+  background-color: #007bff; /* Blue button */
+  color: white;
+  padding: 10px 0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Toggle switch */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  margin: 0 10px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.clear, .pause, .resume {
+  margin: 10px;
+}
+
+button {
+  font-size: 16px; /* Slightly larger for readability */
+  padding: 12px 24px; /* More padding for a larger touch area */
+  margin: 0 10px; /* Space between buttons */
+  background-color: #007bff; /* A nice shade of blue as default */
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover, button:focus {
+  background-color: #0056b3; /* Darker shade on hover/focus */
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2); /* Subtle shadow for depth */
+}
+
+.generate:hover, button:focus {
+  background-color: #037f28; /* Darker shade on hover/focus */
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2); /* Subtle shadow for depth */
+}
+
+button, textarea {
+  box-sizing: border-box; /* Ensure padding and borders are included in width/height */
+}
+
+.button-pause, .button-clear {
+  background-color: rgba(0, 123, 255, 0.7); /* Semi-transparent blue */
+  color: #ffffff;
+  border: none;
+  border-radius: 50%; /* Circular buttons */
+  padding: 10px;
+  cursor: pointer;
+  font-size: 16px; /* Icons might be font-based, adjust size accordingly */
+}
+
+.comment-box {
+  width: 100%; /* Full width of its container */
+  padding: 12px 15px; /* Comfortable padding inside the box */
+  font-size: 16px; /* Legible font size */
+  border-radius: 8px; /* Rounded corners for a modern look */
+  border: 1px solid #ccc; /* Subtle border */
+  margin-bottom: 10px; /* Space below the text box */
+  resize: vertical; /* Allows the user to resize the text box vertically */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  transition: border-color 0.3s, box-shadow 0.3s; /* Smooth transition for interactions */
+}
+
+.comment-box:focus {
+  border-color: #007bff; /* Highlight color when the text box is focused */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Stronger shadow for focus indication */
+  outline: none; /* Remove default focus outline */
+}
+
+/* Placeholder style */
+.comment-box::placeholder {
+  color: #aaa; /* Light color for placeholder text */
+  font-style: italic; /* Italic style for a distinguishable placeholder */
+}
+
+/* Scrollbar style for the text box when content overflows */
+.comment-box::-webkit-scrollbar {
+  width: 5px;
+}
+
+.comment-box::-webkit-scrollbar-thumb {
+  background: #007bff; /* Scrollbar color */
+  border-radius: 10px;
+}
+
+.comment-box::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Scrollbar track color */
+}
+
+.caption-textbox {
+  margin-top: 30px;
+  width: 100%; /* Full width of its container */
+  height: 80%;
+  padding: 12px 15px; /* Comfortable padding inside the box */
+  font-size: 16px; /* Legible font size */
+  border-radius: 8px; /* Rounded corners for a modern look */
+  border: 1px solid #ccc; /* Subtle border */
+  margin-bottom: 10px; /* Space below the text box */
+  resize: vertical; /* Allows the user to resize the text box vertically */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  transition: border-color 0.3s, box-shadow 0.3s; /* Smooth transition for interactions */
+}

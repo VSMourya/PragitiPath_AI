@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "gentle-proton-413918",
+  "private_key_id": "83acd75775ba701b66b3d878fcb1b50aba0c66e1",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQDkCYd7wpQJanua\nIknTSfVIIw127DqHF7ghfuAI9k29fivF/kDt03pl0k7MTE2QxgJqdr5AgF/EOv+l\nH3WUZv29ybdasJ88Og/sSLk9EQdOqM6qcsNC8qg51EoJX6lF5GhmYD+mVCeK0U4W\naGiMtrD6MonSjOW/tlNQAVAjxtKp4kSedwJM4TiHoNdkCYOl3lH+UEuB6BgzzSFP\nmH6P02+Or02hQ3xyoy5spjER4j3ZuBhm21OgKId3caT46q70YOGg48m6/fPQDvzh\niYnwiUjOoOG7dynvBcqoyuz+WlTqHc67ZnX181ZG7OAi2JL+ONhB9NMWDKAE3BYs\nERP2QWXrAgMBAAECggEAJHb7ocg3I5xR9eShbovnO6j98wmKaxDZbQ3HUII7uIoF\nAO0L6pvvI3odB0v0+VTDN81o1ef7/bqQ0mb0m+MDlLDoGjSfz0yE6vv5bHDyfLBq\nFSqIhoZGwrHrlufOVIgA7ndZ+5nTFZPWYKdDKgE1eATTMjE9X0njX6nza+J+zGho\n0oS8B5DKBmTaQIJmFsdNm3Bttw86kMoZHqiQpov5yBhRPNfIaM66xZLQoKFlQInY\nOuCt0MHoiCENbu49INZWqG5I6pXiiF/Vhw6JDcOsfEh/qz3ZT24j0aj7s1irkLRO\nXVKCAAc5a/MFsdPfg6jqKKCgkwvIzjwgFaqNGTflJQKBgQD4jE7XwSmZpNCwyFIr\ncyTGqqCZ0sa2I1mw14A1bMUvy/X3OhqTSrj5WbJySFzD8V8i4LZC3hrDy3C9B2Hw\nysBGFR7VYmk0GE9ffzvCk6ALy5TtLYaEBa7tjd+iJMpVl3WNKJVOXIuRUCVx4F70\nm6FEdl1zqCzeu9sp6p4QoFzNpwKBgQDq38sbZ8atn60TtFgMi3Yu4LYq8sr7kpcp\nyfj6V5Skp3bQ/YVfSnwskulNL8zhuT10cymYn5GAN60MNg3fjsaeE2ka+Drsu2Q5\ncKZLZXnDh3I2Jk3qn9Q0hFvTq6ITfbwgZKv731pnjTgsjF0YSZuyppWQcpeR+d8H\nkB620RhWHQKBgD8GBO/8kPneqvRIt11BIzAlD/gxVCXXLOUEoAPsAswt4b7AwwBa\nUDEaJ3+HDc65o7AKXuzxuMOxEHM+Lf2Ky9p5fIoLHDYTe/zxHEwodsrG4oqJorRT\nZJnkAbLxtUSi1THn+oQWP2Wndvc7N5i65degU+4B1O7dn6MvVMlOgHm9AoGAdxOi\n23APkDLmAplqEmIaNsYCVV/mfQjiznLxYapJV/j3ChmeJqOStN5+nX1geAf8Gi/Q\npOoxUDnp58j326F9HONmZB/5b8/Jjj2Ica0uwGzJAJ8G3a7OXRnFnFjlwM/8MsgX\nUYj5QoqcMimvgQLAhyBhr2wJYB64bhMpHzJ/DhkCgYAddYiVsjAG6ZQduzUn9ToW\nHFzBKrHsJrBgLtkd9PK5A5otsBcs6NRgVX4rOyMKHJgIUKJcMCxgT+nzrrSOag9J\n7LG01pgAHcWh6nLxSL0TbmMG0BI2H9D72le3cFxRmKHCG0VyUfNUi8ACvq43JjuC\nKwlFfIodDifmJeru+9RaJg==\n-----END PRIVATE KEY-----\n",
+  "client_email": "sbuhacks24@gentle-proton-413918.iam.gserviceaccount.com",
+  "client_id": "109796022518601964700",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/sbuhacks24%40gentle-proton-413918.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
