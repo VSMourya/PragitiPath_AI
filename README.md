@@ -1,5 +1,5 @@
 
-# Virtual AI Board
+# Pragati Path AI
 
 ## Demonstration
 - Hand actions for drawing, erasing and changing colors are demonstrated in the video below
