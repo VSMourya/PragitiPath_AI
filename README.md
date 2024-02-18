@@ -6,8 +6,6 @@ PragatiPath AI is an innovative video platform that leverages real-time hand ges
 
 Watch the demonstration video below to see hand actions for drawing, erasing, and changing colors in action.
 
-[Insert Video Link Here]
-
 ## 🚀 Introduction
 
 PragatiPath AI uses advanced machine learning algorithms to process video input, identifying specific hand markers and actions. This project is designed to revolutionize educational technology by making learning more interactive and engaging. Integrated Google Cloud Platform speech-to-text feature with automatic summarization, enabling the platform to transcribe teacher’s lectures and generate concise bullet-point notes, further facilitating an interactive and efficient learning environment.
@@ -22,7 +20,7 @@ PragatiPath AI uses advanced machine learning algorithms to process video input,
 
 1. **Clone the repository**
    ```
-   git clone [repository link]
+   git clone https://github.com/VSMourya/PragitiPath_AI.git
    ```
 2. **Set up the virtual environment**
    - Create: `python3 -m venv virtual_env`
