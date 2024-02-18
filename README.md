@@ -1,37 +1,82 @@
+# PragatiPath AI
 
-# Pragati Path AI
+PragatiPath AI is an innovative video platform that leverages real-time hand gesture recognition to enhance educational engagement. Using OpenCV and MediaPipe, it interprets hand gestures for interactive content illustration, including drawing, erasing, and changing colors.
 
-## Demonstration
-- Hand actions for drawing, erasing and changing colors are demonstrated in the video below
+## 🎥 Demonstration
 
-https://github.com/VSMourya/Virual-AI-board/assets/30852815/45149548-5ffb-4049-a5f1-107dd2649944
+Watch the demonstration video below to see hand actions for drawing, erasing, and changing colors in action.
 
-## Introduction
-This project is designed to create a virtual AI board that can recognize and interpret hand gestures in real-time. It uses advanced machine learning algorithms to process video input and identify specific hand markers and actions.
+[Insert Video Link Here]
 
-## System Requirements
-- Python 3.8 or above
-- Required Python libraries (requirements.txt)
+## 🚀 Introduction
+
+PragatiPath AI uses advanced machine learning algorithms to process video input, identifying specific hand markers and actions. This project is designed to revolutionize educational technology by making learning more interactive and engaging. Integrated Google Cloud Platform speech-to-text feature with automatic summarization, enabling the platform to transcribe teacher’s lectures and generate concise bullet-point notes, further facilitating an interactive and efficient learning environment.
+
+## 💻 System Requirements
+
+- Python 3.11
 - Docker (optional for containerization)
+- Node.js (for the ReactJS frontend)
 
-## Installation Steps
-1. Clone the repository to your local machine.
-2. Install the required Python libraries by running `pip install -r requirements.txt`
+## 🛠 Installation Steps
 
-## Running the Project
-1. Navigate to the cloned project directory.
-2. Execute the `run.py` script to start the program: `python3 run.py`.
+1. **Clone the repository**
+   ```
+   git clone [repository link]
+   ```
+2. **Set up the virtual environment**
+   - Create: `python3 -m venv virtual_env`
+   - Activate:
+     - Windows: `.\virtual_env\Scripts\activate`
+     - Linux/MacOS: `source virtual_env/bin/activate`
+3. **Install Node Version Manager (nvm)**
+   ```
+   curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+   source ~/.bash_profile
+   ```
+4. **Install Node.js**
+   ```
+   nvm install node
+   nvm install 16
+   ```
+5. **Install Python dependencies**
+   ```
+   pip install -r requirements.txt
+   ```
 
-## Files Description
-- `detectActions.py`: Contains logic for detecting hand actions.
-- `draw_vid.py`: Responsible for drawing the output on the video feed.
-- `run.py`: The main script to run the project.
-- `Dockerfile`: Contains all the commands to assemble an image for docker.
+## 🚀 Running the Project
 
-## Docker Setup (Optional)
-If you are using Docker, follow these steps to build and run the project in a container:
-1. Build the Docker image: `docker build -t virtual-ai-board .`
-2. Run the Docker container: `docker run -it --name virtual-ai-board virtual-ai-board`
+1. **Server setup**
+   - Navigate to `server` directory: `cd server`
+   - Start the Flask server: `python3 run.py`
+2. **Client setup**
+   - Open a new terminal
+   - Navigate to `client` directory: `cd client && npm start`
 
-## Additional Information
-- The project uses a specific hand marker system as shown in the `hand_marks.png` image. Each marker corresponds to a specific point on the hand that the AI will track.
+## 📂 File Descriptions
+
+- `detectActions.py`: Logic for detecting hand actions.
+- `draw_vid.py`: Drawing output on the video feed.
+- `run.py`: Main script to run the project.
+- `Dockerfile`: Commands to assemble a Docker image.
+
+## 🐳 Docker Setup (Optional)
+
+To containerize PragatiPath AI with Docker:
+
+1. **Build the Docker image**
+   ```
+   docker build -t PragatiPath_AI .
+   ```
+2. **Run the Docker container**
+   ```
+   docker run -it --name PragatiPath_AI PragatiPath_AI
+   ```
+
+## 📚 Additional Information
+
+The project uses a specific hand marker system for tracking, detailed in `hand_marks.png`. Each marker corresponds to a specific hand point tracked by the AI.
+
+---
+
+PragatiPath AI is committed to enhancing educational experiences through technology. For contributions, issues, or further inquiries, please reach out through GitHub issues or pull requests.
