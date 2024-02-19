@@ -6,7 +6,7 @@ PragatiPath AI is an innovative video platform that leverages real-time hand ges
 
 Watch the demonstration video below to see hand actions for drawing, erasing, and changing colors in action.
 
-https://github.com/VSMourya/PragitiPath_AI/assets/30852815/9d29d43b-aba1-40de-a258-58ee663c950c
+https://github.com/VSMourya/PragitiPath_AI/assets/30852815/acd862d3-2682-48dd-aeb2-6aef94638e8f
 
 ## 🚀 Introduction
 
