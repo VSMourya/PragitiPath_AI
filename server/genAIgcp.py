@@ -1,5 +1,5 @@
 import google.generativeai as genai
-genai.configure(api_key='AIzaSyB-JV9h00I_lFNurzTZWc46qulRzYD--VI')
+genai.configure(api_key='Null')
 def read_text_file(file_path):
     with open(file_path, 'r', encoding='utf-8') as file:
         content = file.read()
